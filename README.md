@@ -21,9 +21,7 @@ Additionally, the script simulates **cell aging** with SEI growth and lithium pl
 
 * Defines a **2RC + Warburg model** impedance function:
 
-  $$
-  Z(\omega) = R_0 + \frac{R_1}{1 + j \omega R_1 C_1} + \frac{R_2}{1 + j \omega R_2 C_2} + \sigma \frac{1 - j}{\sqrt{\omega}}
-  $$
+  $$Z(\omega) = R_0 + \frac{R_1}{1 + j \omega R_1 C_1} + \frac{R_2}{1 + j \omega R_2 C_2} + \sigma \frac{1 - j}{\sqrt{\omega}}$$
 * Fits simulated impedance data to the ECM using `scipy.optimize.curve_fit` with combined real and imaginary parts.
 * Prints optimized circuit parameters.
 
